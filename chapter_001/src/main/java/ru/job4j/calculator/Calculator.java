@@ -1,8 +1,11 @@
 package ru.job4j.calculator;
 
-
+/**
+ * Calculate
+ *
+ * @author Sychev Maksim (620474@gmail.com)
+ */
 public class Calculator {
-
     public static void add(double first, double second) {
         double result = first + second;
         System.out.println(first + " + " + second + " = " + result);
@@ -19,6 +22,11 @@ public class Calculator {
         double result = first - second;
         System.out.println(first + " + " + second + " = " + result);
     }
+
+    /**
+     *
+     * @param args - args.
+     */
     public static void main(String[] args) {
         add(1, 1);
         div(4, 2);
