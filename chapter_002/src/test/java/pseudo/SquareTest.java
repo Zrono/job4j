@@ -12,9 +12,9 @@ public class SquareTest {
                 square.draw(),
                 is(
                         new StringBuilder()
-                                .append("++++")
-                                .append("+  +")
-                                .append("+  +")
+                                .append("++++\n")
+                                .append("+  +\n")
+                                .append("+  +\n")
                                 .append("++++")
                                 .toString()
                 )
