@@ -26,7 +26,6 @@ public class Tracker {
 
     public ArrayList<Item> findByName(String key) {
         ArrayList<Item> result = new ArrayList<>();
-        int point = 0;
         for (Item item : items) {
             if (item.getName().equals(key)) {
                 result.add(item);
