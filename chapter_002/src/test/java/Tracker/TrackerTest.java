@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 import ru.job4j.tracker.Item;
 import ru.job4j.tracker.Tracker;
+import java.util.List;
 
 import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.assertThat;
@@ -32,8 +33,8 @@ public class TrackerTest {
         tracker.add(item2);
         tracker.add(item3);
         tracker.add(item4);
-        Item[] arrayWithoutNull = tracker.findAll();
-        assertThat(arrayWithoutNull.length, is(4));
+        List<Item> arrayWithoutNull = tracker.findAll();
+        assertThat(arrayWithoutNull.size(), is(4));
     }
 
     @Test
@@ -47,8 +48,8 @@ public class TrackerTest {
         tracker.add(item2);
         tracker.add(item3);
         tracker.add(item4);
-        Item[] arrayOneName = tracker.findByName("test1");
-        assertThat(arrayOneName.length, is(3));
+        List<Item> arrayOneName = tracker.findByName("test1");
+        assertThat(arrayOneName.size(), is(3));
     }
 
     @Test
